@@ -80,7 +80,7 @@ main(int argc, char *argv[])
     nk_sdl_font_stash_end();
     /*nk_style_set_font(ctx, &droid->handle)*/;}
 
-    background = nk_rgb(28,48,62);
+    background = nk_rgb(0xff, 0xff, 0xff); //nk_rgb(28,48,62);
     while (running)
     {
         /* Input */

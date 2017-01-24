@@ -13563,11 +13563,11 @@ nk_do_color_picker(nk_flags *state,
  * ===============================================================*/
 NK_API void nk_style_default(struct nk_context *ctx){nk_style_from_table(ctx, 0);}
 #define NK_COLOR_MAP(NK_COLOR)\
-    NK_COLOR(NK_COLOR_TEXT,                 175,175,175,255) \
-    NK_COLOR(NK_COLOR_WINDOW,               45, 45, 45, 255) \
-    NK_COLOR(NK_COLOR_HEADER,               40, 40, 40, 255) \
+    NK_COLOR(NK_COLOR_TEXT,                 0xFF/*175*/,0x00/*175*/,0x00/*175*/,255) \
+    NK_COLOR(NK_COLOR_WINDOW,               0xCC/*45*/, 0xCC/*45*/, 0xCC/*45*/, 255) \
+    NK_COLOR(NK_COLOR_HEADER,               0x00/*40*/, 0x00/*40*/, 0xFF/*40*/, 255) \
     NK_COLOR(NK_COLOR_BORDER,               65, 65, 65, 255) \
-    NK_COLOR(NK_COLOR_BUTTON,               50, 50, 50, 255) \
+    NK_COLOR(NK_COLOR_BUTTON,               0xFF/*50*/, 0xFF/*50*/, 0xFF/*50*/, 255) \
     NK_COLOR(NK_COLOR_BUTTON_HOVER,         40, 40, 40, 255) \
     NK_COLOR(NK_COLOR_BUTTON_ACTIVE,        35, 35, 35, 255) \
     NK_COLOR(NK_COLOR_TOGGLE,               100,100,100,255) \
